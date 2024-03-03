@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner userScanner = new Scanner(System.in);
         String fileName = System.getenv("VAR1");
+        if (fileName == null) fileName = "";
+        //String fileName = "spaceMarine.csv";
         String splitString = ";";
         FileManager fileManager = new FileManager(fileName, splitString);
 

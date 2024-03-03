@@ -45,7 +45,6 @@ public class FileManager {
      */
     public LinkedList<SpaceMarine> readCollection() {
         if(!fileName.isEmpty()) {
-
             LinkedList<SpaceMarine> result = new LinkedList<>();
             int trashCounter = 0;
             File file = new File(fileName);
